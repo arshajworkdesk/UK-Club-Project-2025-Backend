@@ -13,6 +13,6 @@ public final class MessageConstants {
     public static final String SUCCESS_LOGIN = "Login successful";
 
     // Error Messages
-    public static final String ERROR_INVALID_CREDENTIALS = "Invalid credentials or user is not an admin";
+    public static final String ERROR_INVALID_CREDENTIALS = "Invalid credentials or user tried to login is not an admin";
 }
 

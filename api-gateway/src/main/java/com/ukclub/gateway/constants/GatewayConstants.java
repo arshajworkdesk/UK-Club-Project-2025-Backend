@@ -12,11 +12,11 @@ public class GatewayConstants {
 
 
     // Public endpoints that don't require JWT authentication
+    // Note: Member and contact endpoints removed until services are implemented
+    // Uncomment in both GatewayConfig.java and here when services are ready:
+    // "/api/membership/register", "/api/members", "/api/contact"
     public static final List<String> PUBLIC_ENDPOINTS = Arrays.asList(
-            "/api/admin/login",
-            "/api/membership/register",
-            "/api/members",
-            "/api/contact"
+            "/api/admin/login"
     );
 
     // JWT Authentication constants

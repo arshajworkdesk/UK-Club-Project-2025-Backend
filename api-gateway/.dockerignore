@@ -1,0 +1,40 @@
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+
+# Environment files (should be passed as env vars)
+.env
+.env.local
+.env.*.local
+
+# Documentation
+README.md
+*.md
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Test files
+src/test/
+
