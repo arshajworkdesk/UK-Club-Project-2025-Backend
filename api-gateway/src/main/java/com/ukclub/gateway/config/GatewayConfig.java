@@ -17,11 +17,11 @@ public class GatewayConfig {
     @Value("${AUTH_SERVICE_URL}")
     private String authServiceUrl;
 
-    @Value("${MEMBER_SERVICE_URL}")
-    private String memberServiceUrl;
+//     @Value("${MEMBER_SERVICE_URL}")
+//     private String memberServiceUrl;
 
-    @Value("${CONTACT_SERVICE_URL}")
-    private String contactServiceUrl;
+//     @Value("${CONTACT_SERVICE_URL}")
+//     private String contactServiceUrl;
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
@@ -33,20 +33,20 @@ public class GatewayConfig {
                         .path("/api/admin/login")
                         .uri(authServiceUrl))
                 
-                // Member Registration - Public
-                .route("member-register", r -> r
-                        .path("/api/membership/register")
-                        .uri(memberServiceUrl))
+                // Member Registration - Public (Not implemented yet - uncomment when service is ready)
+                // .route("member-register", r -> r
+                //         .path("/api/membership/register")
+                //         .uri(memberServiceUrl))
                 
-                // Get Approved Members - Public
-                .route("members-public", r -> r
-                        .path("/api/members")
-                        .uri(memberServiceUrl))
+                // Get Approved Members - Public (Not implemented yet)
+                // .route("members-public", r -> r
+                //         .path("/api/members")
+                //         .uri(memberServiceUrl))
                 
-                // Contact Form - Public
-                .route("contact", r -> r
-                        .path("/api/contact")
-                        .uri(contactServiceUrl))
+                // Contact Form - Public (Not implemented yet)
+                // .route("contact", r -> r
+                //         .path("/api/contact")
+                //         .uri(contactServiceUrl))
                 
                 .build();
     }
